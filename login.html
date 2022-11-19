@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/65426bd05f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      body {
+        background-image: url(images/login-bg.jpg);
+        font-family: "Poppins", sans-serif;
+      }
+      body:before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: rgb(0, 0, 0, 0.6);
+      }
+      .login-div {
+        position: relative;
+        margin: 100px auto;
+        width: 500px;
+        padding: 20px 60px;
+        padding-bottom: 40px;
+        background: rgba(7, 7, 7, 0.6);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(9px);
+        border: 1px solid rgba(207, 0, 0, 0.9);
+      }
+      .logo {
+        width: 200px;
+        margin: 0 auto;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        width: 60%;
+      }
+      .subtitle {
+        text-align: center;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+      .form {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .fa-regular,
+      .fa-solid {
+        padding-left: 15px;
+        padding-right: 10px;
+        border-right: 1px solid rgb(255, 255, 255, 0.5);
+        font-size: 20px;
+      }
+      .form input {
+        font-size: 18px;
+        padding: 10px 20px 10px 5px;
+        border: none;
+        outline: none;
+        background: none;
+      }
+
+      .username,
+      .password {
+        display: block;
+        border-radius: 30px;
+        border: 1px solid rgb(255, 255, 255, 0.7);
+        padding: 5px;
+        margin: 20px 0;
+      }
+      .form svg {
+        height: 25px;
+        margin-bottom: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      .options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 0px;
+        margin-bottom: 30px;
+      }
+      .options a {
+        text-decoration: none;
+      }
+      .options a:hover {
+        color: rgb(255, 51, 51);
+      }
+      button.signin-btn {
+        cursor: pointer;
+        width: 100%;
+        padding: 12px 10px;
+        border: none;
+        font-size: 18px;
+        border-radius: 30px;
+        background-color: rgb(255, 51, 51);
+        color: white;
+        margin-bottom: 30px;
+      }
+      button.signin-btn:hover {
+        background-color: rgb(200, 45, 45);
+      }
+      .sign-up {
+        font-size: 14px;
+      }
+      .sign-up a {
+        text-decoration: none;
+        color: rgb(255, 51, 51);
+      }
+      .sign-up a:hover {
+        color: rgb(200, 45, 45);
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100vw;
+        height: 200px;
+        background: rgb(0, 0, 0, 0.8);
+      }
+      .footer p {
+        margin-top: 25px;
+        margin-left: 250px;
+      }
+      .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .info {
+        display: block;
+        margin-top: 10px;
+      }
+      .info p {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 0.5;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-div">
+      <div class="logo">
+        <img src="icons/devflex-logo-03.png" alt="" />
+      </div>
+      <div class="subtitle">Movie Streaming Platform</div>
+
+      <div class="form">
+        <div class="username">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="Username or Email" />
+        </div>
+        <div class="password">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+
+        <div class="options">
+          <div class="remember-me">
+            <input type="checkbox" />
+            <label for="remember-me">Remember me?</label>
+          </div>
+
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <a href="index.html"><button class="signin-btn">Login</button></a>
+        <div class="sign-up">
+          <span>New to Devflex? </span><a href="">&nbsp;Sign up now.</a>
+          <span
+            ><br /><br />
+            This page is protected by Google reCAPTHCA to ensure you're not a
+            bot.</span
+          ><a href="#">&nbsp;&nbsp;Learn more.</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Questions? Contact us.</p>
+
+      <div class="footer-info">
+        <div class="info">
+          <p>FAQ</p>
+          <p>Cookie Preferences</p>
+        </div>
+
+        <div class="info">
+          <p>Help us</p>
+          <p>Corporate Information</p>
+        </div>
+
+        <div class="info">
+          <p>Terms of use</p>
+        </div>
+
+        <div class="info">
+          <p>Privacy</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
